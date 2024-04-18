@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+   
+    background-image: linear-gradient(135deg, #FFA500, #FF8C00, #FF6347, #FF4500);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    position:fixed;
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 100px;
+    width:100%;
+    z-index:2;
+    
+
+    
+    
+   
+}
+
+h1{
+    color:#FF8C00
+}
+.header a {
+    color: #fff; /* White */
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+#logo{
+    display:flex;
+    position:relative;
+    left:220px;
+    
+}
+
+.btn {
+    height: 50px;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    background-color:  rgb(255, 0, 0); /* Orange background */
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:  rgba(255, 0, 0, 0.468); /* Slightly darker orange on hover */
+}
+
+
+
+a{
+    text-decoration: none;
+    margin-right:30px;
+    color: rgb(255, 98, 0);
+}
+.nav{
+    font-family: "Poppins", sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    letter-spacing: 0.1rem;
+    
+}
+.nav a:hover {
+    color: #ff8c00; /* Change link color to orange on hover */
+}
+.login a {
+    color: #fff;
+    background-color: #333; /* Dark grey */
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.login a:hover {
+    background-color:  #FF8C00;; /* Darker grey */
+}
+.tag{
+    position:relative;
+    bottom:600px;
+    left:900px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+
+
+}
+#welcome{
+    width:300px;
+}
+.content{
+    z-index:1;
+    height:800px;
+}
+#write{
+    height:96px;
+    width:440px;
+}
+#trainer1{
+    margin-top:28px;
+    height:80px;
+    width:80px;
+    border-radius: 50%;
+}
+.about-us{
+    display: flex;
+    justify-content: center;
+}
+#about{
+    height:50px;
+    width:200px;
+    position:relative;
+    left :140px;
+}
+#write{
+    position:relative;
+    top:100px;
+    right:250px;
+}
+.trainer1{
+    position:relative;
+    top:290px;
+    right:560px;
+}
+.trainer1details{
+    position:relative;
+    bottom:85px;
+    left:90px;
+}
+#about-pic{
+    height:400px;
+    width:800px;
+    margin-left:100px;
+    margin-right:30px;
+    border-radius:5%;
+    position:relative;
+    left:50px;
+}
+.card{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width:300px;
+    height:200px;
+    margin-right:10px;
+   
+}
+.progress-bar{
+    background-color: rgb(255, 0, 0);
+    height: 10px;
+    width:150px;
+    border-radius:5px;
+    position:relative;
+    bottom:50px;
+    left:10px;
+}
+.card-write{
+    color:white;
+    position:relative;
+    height:200px;
+    width:300px;
+    bottom:24px;
+    background-color: rgb(0, 0, 0);
+
+}
+.wrapper{
+    display:flex;
+}
+.percentage{
+    font-size: large;
+    color:white;
+    position:relative;
+    bottom:100px;
+    left:50px;
+}
+.cards{
+    display:flex;
+    width:1200px;
+    height:500px;
+    padding:0px 0px 30px;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin:0 auto;
+}
+.card:hover{
+    box-shadow:4px 4px 4px 4px ;
+    transition: 1s ease-in-out;
+    transform: translate3d(25px);
+}
+#classes{
+    display: flex;
+    justify-content: center;
+}
+video{
+    display: block;
+    position: relative;
+    left:50px;
+    height:900px;
+    width:700px;
+}
+.foot{
+    display: flex;
+    z-index:1;
+    justify-content: space-around;
+    position:relative;
+    bottom:400px;
+    color:rgb(255, 98, 0);
+
+}
+footer{
+    height: 500px;
+}
+.footer-end{
+    display:flex;
+    justify-content: space-around;
+    height:50px;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 98, 0);
+    position:relative;
+    bottom:10px;
+    z-index:1;
+    
+
+
+}
+/* CSS code in style.css file */
+
+.footer {
+    background-color: #333; /* Set background color for the footer */
+    color: #fff; /* Set text color for the footer */
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Align content evenly in the footer */
+    align-items: center; /* Center items vertically in the footer */
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer content horizontally */
+}
+
+.footer-social {
+    display: flex;
+}
+
+.social-icon {
+    font-size: 30px; /* Enlarge the icon size */
+    margin-right: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Enlarge the icon on hover */
+    box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.8); /* Add a glowing effect on hover */
+}
+
+.footer-text {
+    text-align: center; /* Center align the text */
+}
+
+.footer-text p {
+    margin: 5px 0; /* Add spacing above and below each paragraph */
+}
+
+.footer-text a {
+    color: #ff8c00; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease; /* Add transition effect on link color change */
+}
+
+.footer-text a:hover {
+    color: #ffa500; /* Change link color on hover */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height:10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffcc85ed; /* Orange */
+  border-radius: 5px; /* Rounded corners */
+  
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0 transparent; /* Track color */
+}
+
+
+/* CSS code in style.css file */
+
+.form-section {
+    margin: 50px auto; /* Center the form horizontally */
+    width: 300px; /* Set a fixed width for the form */
+    padding: 20px; /* Add some padding around the form */
+    background-color: #f9f9f9; /* Set background color for the form */
+    border-radius: 10px; /* Add rounded corners to the form */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.form-section h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    font-weight: bold; /* Make labels bold */
+}
+
+.form-section input[type="text"],
+.form-section input[type="password"],
+.form-section input[type="submit"] {
+    padding: 10px; /* Add padding to input fields and submit button */
+    margin-bottom: 10px; /* Add spacing between input fields and submit button */
+    border-radius: 5px; /* Add rounded corners to input fields and submit button */
+    border: 1px solid #ccc; /* Add a border to input fields and submit button */
+}
+
+.form-section input[type="submit"] {
+    background-color: #FFA500; /* Set background color for submit button */
+    color: #fff; /* Set text color for submit button */
+    border: none; /* Remove border from submit button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.form-section input[type="submit"]:hover {
+    background-color: #FF8C00; /* Change background color on hover */
+}
+
+/* Additional color options */
+
+.form-section {
+    background-color: #e6e6fa; /* Lavender */
+}
+
+.form-section label {
+    color: #483d8b; /* Dark slate blue */
+}
+
+.form-section input[type="text"],
+.form-section input[type="password"] {
+    background-color: #fffafa; /* Snow */
+}
+
+.form-section input[type="submit"] {
+    background-color: #4682b4; /* Steel blue */
+}
+
+.form-section input[type="submit"]:hover {
+    background-color: #5f9ea0; /* Cadet blue */
+}
+
+
+
+ 
