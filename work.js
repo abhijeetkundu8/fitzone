@@ -31,11 +31,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const signUpForm = document.querySelector(".form-section");
 
     getStartedBtn.addEventListener("click", function() {
-        window.location.href = 'signup.html'; // Show the sign-up form
+        window.location.href = 'signup.html'; 
     });
 
     exploreMoreBtn.addEventListener("click", function() {
-        window.location.href = 'form.html' // Show the sign-up form
+        window.location.href = 'form.html' 
     });
 });
 
@@ -53,4 +53,44 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'signup.html'; 
     });
 });
+
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var customAlert = document.getElementById("customAlert");
+    
+    
+    if (username === "abhijeetkundu" && password === "1234567") {
+        customAlert.style.backgroundColor = "#4CAF50"; 
+        customAlert.innerHTML = "Login successful!"; 
+       
+    } else {
+        customAlert.style.backgroundColor = "#f44336"; 
+        customAlert.innerHTML = "Invalid username or password. Please try again.";
+    }
+    customAlert.style.display = "block"; 
+            
+            setTimeout(function() {
+                customAlert.style.display = "none";
+            }, 3000); 
+});
+let passtoggle=document.getElementById("password-toggle");
+passtoggle.addEventListener("click",()=>{
+    var passwordInput = document.getElementById("password");
+    var toggleIcon = document.getElementById("toggleIcon");
+    if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.classList.remove("fa-eye-slash");
+        toggleIcon.classList.add("fa-eye");
+    } else {
+        passwordInput.type = "password";
+        toggleIcon.classList.remove("fa-eye");
+        toggleIcon.classList.add("fa-eye-slash");
+    }
+}
+
+);
+
+
 

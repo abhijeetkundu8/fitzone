@@ -13,7 +13,7 @@
         <span id="logo"><img src="logo1.jpg" height="40px" width="70px" s  ></span>
         <a href="#"><span style="color:#ff8c00;font-size: 32px;">F</span>ITZONE</a>
         <div class="nav">
-        <a href="index.html">HOME</a>
+        <a href="22BDS0272_SLOT_L47_ABHIJEETKUNDU.html">HOME</a>
         <a href="#">ABOUT</a>
         <a href="#">SERVICES</a>
         <a href="#">BLOGS</a>
@@ -31,14 +31,21 @@
     <section class="form-section">
        <br> <br> <br> 
         <h2>Login Form</h2>
-        <form>
+        <form id="loginForm">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required><br><br>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
+            <div style="position: relative;">
+                <input type="password" id="password" name="password" required autofocus>
+                <span id="password-toggle" > 
+                    <i id="toggleIcon" class="fas fa-eye-slash"></i>
+                </span>
+            </div>
+            <br><br>
             <input type="submit" value="Submit">
         </form>
         <br> <br> <br> 
+        <div id="customAlert" class="custom-alert"></div>
     </section>
 
     <footer style="background-color: #1a1a1a; color: #ffffff; padding: 50px 0;">
@@ -84,4 +91,5 @@
 
     <script src="work.js"></script>
 </body>
+
 </html>

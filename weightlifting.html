@@ -3,46 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login or Sign Up</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for card4 content */
+        .card4 h2 {
+            font-size: 24px;
+            color: #ff8c00;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .card4 p {
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card4 ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card4 ul li {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+        .card4 button {
+            background-color: #ff8c00;
+            color: #fff;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: block;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+        .card4 button:hover {
+            background-color: #ff6f00;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <span id="logo"><img src="logo1.jpg" height="40px" width="70px" s  ></span>
         <a href="#"><span style="color:#ff8c00;font-size: 32px;">F</span>ITZONE</a>
         <div class="nav">
-        <a href="22BDS0272_SLOT_L47_ABHIJEETKUNDU.html" >HOME</a>
-        <a href="#">ABOUT</a>
-        <a href="#">SERVICES</a>
-        <a href="#">BLOGS</a>
-        <a href="#">CONTACT</a>
+        <a href="22BDS0272_SLOT_L47_ABHIJEETKUNDU.html">HOME</a>
+        <a href="#ab">ABOUT</a>
+        <a href="#service">SERVICES</a>
+        <a href="#bl">BLOGS</a>
+        <a href="#f">CONTACT</a>
         </div>
 
         <div class="login"> 
-        <a href="form.html" id="loginButton">LOGIN</a>
+        <a href="#" id="loginButton">LOGIN</a>
         <a href="#" id="signupButton">SIGN UP</a>
         </div>
 
     </header>
-    <br>  <br> <br>  <br>
+    <br><br> <br><br> <br><br><br>
+    <section style="display: flex;">
+        <div class="image-container" style="flex: 1;">
+            <img src="weightlifting.jpg" style="width:100%; border-top-left-radius: 5px;border-top-right-radius:5px ; border-bottom-right-radius:5px;">
+        </div>
 
-    <section class="form-section">
-        <h2>Sign Up Form</h2>
-        <form id="signupForm">
-            <label for="fullname">Full Name:</label>
-            <input type="text" id="fullname" name="fullname" required><br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            <input type="submit" value="Sign Up">
-        </form>
-        <div id="confirmation" class="confirmation"></div> 
+        <div class="card-container" style="flex: 1;  ">
+            <div class="card4" style="color:black;padding: 20px; background-color:#e6e6fa ; height:469px; border-top-left-radius: 5px;border-top-right-radius:5px ; border-bottom-left-radius:5px ;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  ">
+                <h2>Weightlifting Class </h2>
+                <br>
+                <p>Join our weightlifting classes to build strength, improve flexibility, and achieve your fitness goals!</p>
+                <ul>
+                    <li>Monday: 5:00 PM - 6:30 PM</li>
+                    <li>Wednesday: 6:00 PM - 7:30 PM</li>
+                    <li>Friday: 4:30 PM - 6:00 PM</li>
+                    <li>Saturday: 9:00 AM - 10:30 AM</li>
+                </ul>
+                <br><br>
+                <a href="form.html"><button >Join Now</button></a>
+            </div>
+        </div>
     </section>
-
-    <footer style="background-color: #1a1a1a; color: #ffffff; padding: 50px 0;">
+    <br><br> 
+    <footer style="background-color: #1a1a1a; color: #ffffff; padding: 50px 0;" id="f" >
         <div class="container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
             <div class="footer-section">
                 
@@ -81,33 +130,5 @@
             <p style="margin-bottom: 0;">Privacy Policy | Terms and Conditions</p>
         </div>
     </footer>
-
-    <script >
-        document.getElementById("signupForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    var fullName = document.getElementById("fullname").value;
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-    var confirmation = document.getElementById("confirmation");
-
-    
-    if (password.length < 6) {
-        confirmation.style.backgroundColor = "#f44336"; 
-        confirmation.innerHTML = "Password must be more than 6 characters"; 
-        
-    }else{
-        confirmation.style.backgroundColor = "#4CAF50"; 
-        confirmation.innerHTML = "Sign up successful!"; 
-
-    }
-
-    
-    confirmation.style.display = "block"; 
-    
-    setTimeout(function() {
-        confirmation.style.display = "none";
-    }, 3000); 
-});
-    </script>
 </body>
 </html>
